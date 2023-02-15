@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <!--link rel="stylesheet" href="jarditou_css/assets/css/styles.css"-->
+<style>
+  .titre {
+    color:black;
+    text-transform: uppercase;
+ }
+</style>
+</head>
+
+<body>
+  <header>
+    <div class="row">
+      <div class="col-lg-10"><img src="src/img/jarditou_logo-removebg-preview.png" class="img-fluid" alt="logo jarditou"
+          title="logo jarditou"></div>
+
+      <div class="col-lg-2"><p class="titre"><i>Tout le jardin</i></p>
+      </div>
+      </div>
+  </header>
+  <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="jarditoucom.html">Jarditou.com</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Accueil</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="tableau.html">Tableau</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Rechercher" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit"><img src="src/img/search.svg"></button>
+      </form>
+    </div>
+  </nav>
+  <img src="src/img/promotion.jpg" class="img-fluid" alt="promo jarditou" title="promo lames de terrasse jarditout"
+    width="100%">
+  <section class="aside">
+    <div class="row">
+      <div class="col-lg-10">
+        <h1><u>Contact</u></h1>
+        <hr>
+
+        <p>*Ces zones sont obligatoires</p>
+        <form action="destination.php" method="post" id="formulaire_contact">
+          <fieldset>
+            <legend>Vos coordonnées</legend>
+            <label for="nom">Votre nom* :</label><input type="text" name="nom" required pattern="^[a-z]+$" id="nom">
+            <br>
+            <label for="prenom">Votre prenom* :</label><input type="text" name="prenom" required pattern="^[a-z]+$"
+              id="prenom">
+            <p>Sexe* :
+              <label for="masculin">Masculin</label><input type="radio" id="masculin" name="sexe" value="masculin">
+              <label for="féminin">Féminin</label><input type="radio" id="féminin" name="sexe" value="féminin">
+              <label for="nongenré">Non genré</label><input type="radio" id="nongenré" name="sexe" value="nongenré">
+            </p>
+            <label for="date">Date de naissance* :</label><input type="text" name="date" id="date" required>
+            <br>
+            <label for="codepostal">Code postal* :</label><input type="text" name="codepostal" id="codepostal" required>
+            <br>
+            <label for="adresse">Adresse :</label><input type="text" name="adresse" id="adresse">
+            <br>
+            <label for="ville">Ville :</label><input type="text" name="ville" id="ville">
+            <br>
+            <label for="email">Email* :</label><input type="text" name="email" id="email" required>
+            <br>
+          </fieldset>
+          <br>
+          <fieldset>
+            <legend>Votre demande</legend>
+            <label for="sujet">Sujet* :</label>
+            <select name="sujet" id="sujet" required>
+              <option>Mes commandes</option>
+              <option>Question sur un produit</option>
+              <option>Réclamation</option>
+              <option>Autres</option>
+            </select>
+            <br>
+            <label for="question">Votre question* :</label>
+            <textarea name="question" rows="5" cols="45" id="question" required></textarea>
+
+
+          </fieldset>
+          <br>
+          <input type="checkbox" name="traitementinfo" value="accepter" id="traitement" required><label
+            for="traitement">*J'accepte le
+            traitement informatique de ce formulaire</label>
+          <br>
+          <input type="submit" value="envoyer"><input type="reset" value="annuler">
+        </form>
+        <hr>
+      </div>
+      <!--div class="bg-warning col-lg-2">
+        <aside>colonne droite</aside>
+      </div-->
+    </div>
+  </section>
+
+  <footer>
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="mentionslegales.html">Mentions legales</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="plandusite.html">Plan du site</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="horaires.html">Horaires</a>
+            </li>
+          </ul>
+        </div>
+    </nav>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
